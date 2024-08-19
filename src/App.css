@@ -1,0 +1,123 @@
+.banneri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 350px;
+}
+
+  .banneri img {
+    animation: updown 3s linear infinite;
+    z-index: 1;
+  }
+  @keyframes updown {
+      0% {
+          transform: translateY(-20px);
+      }
+      50% {
+          transform: translateY(20px);
+      }
+      100% {
+          transform: translateY(-20px);
+      }
+  }
+  .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+  }
+
+
+.earthUpper {
+  padding-top: 20%;
+}
+
+   .earth_2d {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 100px; */
+}
+
+.earth_2d img {
+    width: 80%;
+    animation: updownEarth 4s linear infinite, scaleEarth 4s linear infinite;
+    z-index: 1;
+}
+
+@keyframes updownEarth {
+    0% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes scaleEarth {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+}
+
+@media only screen and (max-width: 1280px) {
+    .earthUpper {
+        padding-top: 5%;
+      }
+      
+      .earth_2d img {
+        width: 40%;
+          animation: updownEarth 4s linear infinite, scaleEarth 4s linear infinite;
+          z-index: 1;
+      }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .earthUpper {
+        padding-top: 5%;
+      }
+      
+      .earth_2d img {
+        width: 70%;
+          animation: updownEarth 4s linear infinite, scaleEarth 4s linear infinite;
+          z-index: 1;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .earthUpper {
+        padding-top: 5%;
+      }
+      
+      .earth_2d img {
+        width: 50%;
+          animation: updownEarth 4s linear infinite, scaleEarth 4s linear infinite;
+          z-index: 1;
+      }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .earthUpper {
+        padding-top: 3%;
+      }
+      
+      .earth_2d img {
+        width: 80%;
+          animation: updownEarth 4s linear infinite, scaleEarth 4s linear infinite;
+          z-index: 1;
+      }
+  }
+
+
+ 
