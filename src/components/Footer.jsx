@@ -3,7 +3,8 @@ import React from 'react';
 import { Box, Button, IconButton, Link } from '@mui/material';
 import Divider from '@mui/material/Divider';
 // import { SectionWrapper } from "../hoc";
-import { Facebook, Twitter, Instagram, LinkedIn, YouTube, Height } from '@mui/icons-material';
+import { Facebook, Twitter, Instagram, LinkedIn, YouTube, GitHub } from '@mui/icons-material';
+
 
 const Footer = () => {
     return (
@@ -16,7 +17,7 @@ const Footer = () => {
                 padding: 3,
             }}
         >
-        
+
 
             <div className='flex flex-col justify-center items-center mt-5'>
                 <div sx={{
@@ -48,10 +49,10 @@ const Footer = () => {
                 {/* Navigation Links */}
                 <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', }}>
                     <Link href="#" color="inherit" sx={{ margin: 1, listStyle: 'none' }}>
-                        Home
+                        Wedding 
                     </Link>
                     <Link href="#" color="inherit" sx={{ margin: 1 }}>
-                        About
+                        A
                     </Link>
                     <Link href="#" color="inherit" sx={{ margin: 1 }}>
                         Services
@@ -69,19 +70,29 @@ const Footer = () => {
                 {/* Social Media Icons */}
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                     <IconButton color="inherit">
-                        <Facebook />
+                        <a href="https://www.canva.com/templates/" target="_blank">
+                            <Facebook />
+                        </a>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Twitter />
+                        <a href="https://twitter.com/" target="_blank">
+                            <GitHub />
+                        </a>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Instagram />
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <Instagram />
+                        </a>
                     </IconButton>
                     <IconButton color="inherit">
-                        <LinkedIn />
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <LinkedIn />
+                        </a>
                     </IconButton>
                     <IconButton color="inherit">
-                        <YouTube />
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <YouTube />
+                        </a>
                     </IconButton>
                 </Box>
             </Box>

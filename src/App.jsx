@@ -1,5 +1,4 @@
 import { BrowserRouter } from "react-router-dom";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import { About, Contact, Experience, Feedbacks, Navbar, Tech, Works, StarsCanvas } from "./components";
