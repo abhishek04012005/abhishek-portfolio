@@ -28,6 +28,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import ditvif from "./company/ditvif.png";
+import ankdata from "./company/ankdata.png"
 
 import client1 from "./client/client1.png";
 import client2 from "./client/client2.png";
@@ -71,6 +72,7 @@ export {
   ditvif,
   shopify,
   starbucks,
+  ankdata,
   // carrent,
   jobit,
   tripguide,

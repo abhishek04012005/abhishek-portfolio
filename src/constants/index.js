@@ -23,6 +23,7 @@ import {
   ditvif,
   starbucks,
   shopify,
+  ankdata,
   // carrent,
   jobit,
   tripguide,
@@ -83,7 +84,7 @@ const technologies = [
       "HTML is the standard markup language for Web pages. With HTML you can create your own Website. ",
     ],
   },
-  
+
   {
     name: "CSS 3",
     icon: css,
@@ -124,7 +125,7 @@ const technologies = [
 
   {
     name: "jQuerry",
-    icon:  jQuery,
+    icon: jQuery,
     date: "March 2020 - April 2021",
     iconBg: "#383E56",
     points: [
@@ -149,8 +150,8 @@ const technologies = [
       "Angular is a platform and framework for building single-page client applications using HTML and TypeScript",
     ],
   },
- 
- 
+
+
   {
     name: "Git",
     icon: git,
@@ -200,11 +201,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Web Developer",
+    company_name: "AnkData",
+    icon: ankdata,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2021 - November 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -217,44 +218,32 @@ const experiences = [
     company_name: "Ditvi Foundation",
     icon: ditvif,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Editing and producing video content using industry-standard software like Kdenlive and blender",
+      "Collaborating with cross-functional teams including directors, producers, and graphic designers to create visually engaging content.",
+      "Implementing creative transitions, effects, and ensuring the video content is optimized for different platforms and screen sizes.",
+      "Participating in post-production reviews and providing constructive feedback to improve the quality of the final product",
     ],
   },
   // {
+  //   title: "Web Developer",
+  //   company_name: "Shopify",
+  //   icon: shopify,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+
+  // {
   //   title: "Full stack Developer",
   //   company_name: "Meta",
-  //   icon: ditvif,
+  //   icon: meta,
   //   iconBg: "#E6DEDD",
   //   date: "Jan 2023 - Present",
   //   points: [
@@ -264,20 +253,14 @@ const experiences = [
   //     "Participating in code reviews and providing constructive feedback to other developers.",
   //   ],
   // },
+
+
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Ajay Kapoor",
-    designation: "Sr. Software Developer",
-    company: "",
-    image: client1,
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like Abhishek does.",
     name: "Anuradha Kumari",
     designation: "Founder of",
     company: "Ditvi Foundation",
@@ -285,7 +268,16 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "I thought it was impossible to make a 3D Model as beautiful, but Abhishek proved me wrong.",
+    name: "Ajay Kapoor",
+    designation: "Sr. Software Developer",
+    company: "",
+    image: client1,
+  },
+
+  {
+    testimonial:
+      "After Abhishek optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Hemlata Kumari",
     designation: "CTO Of",
     company: "456 Enterprises",
@@ -293,7 +285,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "Thanks to Abhishek's video editing, our engagement soared by 70%. We couldn't be more grateful!",
     name: "Vishwas Kumbhkar",
     designation: "Student Of",
     company: "RGPV",
@@ -321,7 +313,7 @@ const projects = [
   {
     name: "Wedding Invitation",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A seamless platform for creating and managing wedding invitations, RSVPs, and event details, ensuring a beautifully organized and unforgettable celebration.",
     tags: [
       {
         name: "HTML",

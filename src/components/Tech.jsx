@@ -76,7 +76,7 @@ const Tech = () => {
     <>
       <div>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I can do
+          What I do
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Skills.

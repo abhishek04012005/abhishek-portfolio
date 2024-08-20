@@ -1,35 +1,61 @@
-import { BrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 
+import Portfolio from './Pages/Portfolio';
+import WeddingWebsite from './Pages/WeddingWebsite';
+import BirthdayWebsite from './Pages/BirthdayWebsite';
+import BirthdayTemplate from './Pages/BirthdayTemplate';
+import WeddingTemplate from './Pages/WeddingTemplate';
 
-import { About, Contact, Experience, Feedbacks, Navbar, Tech, Works, StarsCanvas } from "./components";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
+// Custom 404 Page
+const NotFound = () => (
+  <div>
+    <h1>404 Not Found</h1>
+    <p>Sorry, the page you are looking for does not exist.</p>
+    <Link to="/">Go back to Home</Link>
+  </div>
+);
 
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Portfolio />, 
+    },
+    {
+      path: '/portfolio',
+      element: <Portfolio />, 
+    },
+    {
+      path: '/weddingwebsite',
+      element: <WeddingWebsite/>,
+    },
+    // -------------------------------------
+    {
+      path: '/birthdaywebsite',
+      element: <BirthdayWebsite/>,
+    },
+    {
+      path: '/birthdaytemplate',
+      element: <BirthdayTemplate />,
+    },
+    {
+      path: '/weddingtemplate',
+      element: <WeddingTemplate/>,
+    },
 
+    // -----------------------------------------
+    {
+      path: '*',
+      element: <NotFound />,  // Handling undefined routes
+    }
+  ]
+);
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        {/* <div className='bg-cover bg-no-repeat bg-center'> */}
-        <Navbar />
-        {/* </div> */}
-        <div className='relative z-0'>
-          <Hero />
-          <StarsCanvas />
-        </div>
-        <About />
-        <Experience />
-        <Works />
-        <Tech />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-          {/* <StarsCanvas /> */}
-        </div>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className='relative z-0 bg-primary'>
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
